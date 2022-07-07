@@ -14,5 +14,23 @@ function playRound(playerSelection, computerSelection){
         }else{
             return "Computer chose scissors! You win this round!"
         }
+    } else if (playerSelection == "paper"){
+        if(computerSelection == "paper"){
+            return "Computer chose paper! It's a tie!"
+        } else if (computerSelection == "scissors"){
+            return "Computer chose scissors! Computer wins this round!"
+        }else{
+            return "Computer chose rock! You win this round!"
+        }
+    } else if (playerSelection == "scissors"){
+        if(computerSelection == "scissors"){
+            return "Computer chose scissors! It's a tie!"
+        } else if (computerSelection == "rock"){
+            return "Computer chose rock! Computer wins this round!"
+        }else{
+            return "Computer chose paper! You win this round!"
+        }
+    } else{
+        return "owo"
     }
 }
