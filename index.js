@@ -7,8 +7,8 @@ function computerPlay (){
 }
 
 function playerPlay(){
-    let choice = "What is your choice? Rock, Paper, or Scissors";
-    return choice.toLowerCase;
+    let choice = prompt("What is your choice? Rock, Paper, or Scissors");
+    return choice;
 }
 
 function playRound(player, computer){
@@ -52,6 +52,7 @@ function game(){
     for (let i = 0; i < 5; i++){
         playerSelection = playerPlay();
         computerSelection = computerPlay();
+        console.log(`You chose ${playerSelection}!`)
         console.log(playRound(playerSelection, computerSelection));
 
     }
@@ -64,3 +65,5 @@ function game(){
         console.log("You win this game! Now go touch some grass.")
     }
 }
+
+game();
